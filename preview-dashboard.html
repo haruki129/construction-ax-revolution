@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>施工AX革命 - 統合ダッシュボード プレビュー</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        brand: { 50:'#eff6ff',100:'#dbeafe',500:'#2563eb',600:'#1d4ed8',700:'#1e40af',800:'#1e3a8a' }
+      },
+      fontFamily: { sans: ['Noto Sans JP','Hiragino Sans','sans-serif'] }
+    }
+  }
+}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Noto Sans JP', sans-serif; }
+  .animate-pulse-slow { animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+  @keyframes slideIn { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+  .slide-in { animation: slideIn 0.4s ease-out forwards; }
+  .tab-active { border-bottom: 3px solid #2563eb; color: #2563eb; font-weight: 600; }
+</style>
+</head>
+<body class="bg-slate-50 min-h-screen">
+
+<!-- ===== ヘッダー ===== -->
+<header class="bg-white border-b border-slate-200 px-6 py-4 sticky top-0 z-50 shadow-sm">
+  <div class="flex items-center justify-between max-w-7xl mx-auto">
+    <div class="flex items-center gap-3">
+      <div class="text-3xl">🏗️</div>
+      <div>
+        <h1 class="text-xl font-bold text-slate-800">施工AX革命</h1>
+        <p class="text-xs text-slate-400">Construction AX Revolution Platform</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-6">
+      <!-- ナビゲーション -->
+      <nav class="hidden md:flex items-center gap-1">
+        <button class="px-4 py-2 text-sm tab-active" onclick="showSection('dashboard')">ダッシュボード</button>
+        <button class="px-4 py-2 text-sm text-slate-500 hover:text-brand-600" onclick="showSection('schedule')">工程管理</button>
+        <button class="px-4 py-2 text-sm text-slate-500 hover:text-brand-600" onclick="showSection('matching')">職人マッチング</button>
+        <button class="px-4 py-2 text-sm text-slate-500 hover:text-brand-600" onclick="showSection('safety')">安全管理</button>
+      </nav>
+      <div class="flex items-center gap-3">
+        <button class="relative p-2 text-slate-400 hover:text-slate-600">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/></svg>
+          <span class="absolute -top-1 -right-1 w-4 h-4 bg-red-500 text-white text-[10px] rounded-full flex items-center justify-center">3</span>
+        </button>
+        <span class="text-sm text-slate-500" id="currentDate"></span>
+        <div class="w-9 h-9 bg-brand-600 rounded-full flex items-center justify-center text-white font-bold text-sm">樋</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== メインコンテンツ ===== -->
+<main class="p-6 max-w-7xl mx-auto">
+
+  <!-- KPIカード -->
+  
+  
+  
+  
+  �</main>
+
+<script>
+  
+</script>
+</body>
+</html>
